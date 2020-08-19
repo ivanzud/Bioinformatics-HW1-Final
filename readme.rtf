@@ -1,0 +1,35 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c0\c1\c1;\cssrgb\c100000\c100000\c99985;}
+\margl1440\margr1440\vieww25100\viewh25340\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 Ivan Zundel and Ezra Lee\
+
+\fs36 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 You will need to pip install some libraries when you try to run these. The libraries will show in the error when you run them. Included in the zip file are the python notebooks which we used to create the code. We also have the executables hw1-1.py, \'85etc. I\'92ve also included the fasta files generated from the code below with the first one called inputfile generated from hw1-1.py, \
+Partitionedfile generated from hw1-2.py, and finaloutputfile generated from hw1-3.py\
+\
+In this hw, we used python and the Biopython library to do sequence alignment using dovetail alignment. I then found the consensus sequence for the max alignment and deleted the two alignments found in the sequence list. After, I looped through and compared the consensus sequence to every other sequence and found the max alignment score and deleted a sequence from the alignment if the score > 0. I set the new consensus sequence from the alignment and recursively did it until my list was empty or the alignment score was negative.  Using small numbers is more efficient and I successfully aligned them to their original sequence. It worked perfectly for smaller sequence.\
+ \
+
+\fs56 Instructions: \
+First install libraries when you try to run this function below, it will show an error with the libraries that are not defined. You can then pip install them such as pip install Biopython. You can then delete the results files input file, partitioned file, and finaloutputfile. These files are for your reference. \
+Then you can run these three commands and it will work. It will take much longer if you use sequences of 10000 in length.\
+You can view the python notebooks for some commented out debugging functions. \
+
+\fs36 To read the fasta files, either delete .fasta and you\'92ll be able to read it or use the checks output python notebook and change the file output to the desired file and see it display.\
+
+\fs24 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs42 \cf2 \cb3 \CocoaLigature0 python \ul \ulc2 hw1-1.py\ulnone  100 25 25 25 25 10 0.005 inputfile     \
+\
+python \ul hw1-2.py\ulnone  inputfile 35 70 partitionedfile        \
+ \
+\
+python \ul hw1-3.py\ulnone  partitionedfile 1 -1 -3 finaloutputfile\
+\
+}
